@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'FiraCode';
+  src: url('./../fonts/FiraCode-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'FiraCode-Light';
+  src: url('./../fonts/FiraCode-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'FiraCode-Bold';
+  src: url('./../fonts/FiraCode-Bold.woff') format('woff');
+}
+/* background, color, font-family, font-size,
+height, margin, padding, text-align */
+html,
+body,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: 'FiraCode', san-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+a, a:before, a:after {
+  text-decoration: none;
+  color: #00b0ff;
+}
+
+a:after {
+  color: #268bd2;
+}
+
+.page-container {
+  background-color: #f5f5f5;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f5f5f5;
+  background-color: #607d8b;
+}
+
+.header-title {
+  margin: 5rem 0 2rem 0;
+}
+
+.header-tagline {
+  margin: 0 0 1rem 0;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list > p, .nav-list > li {
+  margin: 1rem;
+}
+
+.nav-list > li > a:hover, a:hover {
+  font-family: 'FiraCode-Bold', sans-serif;
+  color: #ffa000;
+}
+
+.active {
+  border-bottom: 2px solid #268bd2;
+}
+
+.main-container {
+  margin: 5% 30%;
+}
+
+.font-bold {
+  font-family: 'FiraCode-Bold', sans-serif;
+}
+
+.article-title {
+  color: #00b0ff;
+  margin: 1rem 0;
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+.interests {
+  margin: 1rem 0;
+  line-height: 1.4rem;
+}
+
+.contact-item {
+  margin: 1rem 0 1rem 0;
+}
+
+.contact-item > a {
+  font-size: 2rem;
+  margin: 5rem 0;
+}
+
+.contact-item > a:hover {
+  font-family: 'FiraCode-Bold', sans-serif;
+  color: #ffa000;
+}
+
+.about-p {
+  text-indent: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.4rem;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  border-radius: 50%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  height: 10%;
+  color: #f5f5f5;
+  background-color: #263238;
+
+}
+footer > .footer-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
